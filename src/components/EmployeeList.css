@@ -1,0 +1,173 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .employee-list-container {
+    padding: 2rem;
+  }
+  
+  .employee-list-title {
+    color: #43766C;
+    margin-bottom: 2.5rem;
+    font-size: xx-large;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    border: 1px solid #131010;
+    padding: 12px;
+    text-align: left;
+    color: #131010;
+    font-size: medium;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  .employee-table th {
+    background-color: #43766C;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .employee-row {
+    cursor: pointer;
+  }
+  
+  .employee-row:hover {
+    background-color: #B19470;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #1976d2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-container {
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1.25rem;
+  }
+  
+  .retry-button {
+    padding: 0.5rem 1rem;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+  }
+  
+  .retry-button:hover {
+    background-color: #1565c0;
+  }
+  
+  .employee-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    width: 500px;
+    position: relative;
+    border-radius: 8px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .close-button:hover {
+    background: #d32f2f;
+  }
+  
+  .modal-tabs {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e0e0;
+  }
+  
+  .tab-button.active {
+    background-color: #1976d2;
+    color: #fff;
+  }
+  
+  .tab-content {
+    margin-top: 1rem;
+  }
+  
+  .map-container {
+    margin-top: 1rem;
+    width: 100%;
+    height: 300px;
+  }
+  .update-button {
+    padding: 0.5rem 1rem;
+    background-color: #70b1aa;
+    color: #131010;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+  
+  .update-button:hover {
+    background-color: #F8FAE5;
+  }
